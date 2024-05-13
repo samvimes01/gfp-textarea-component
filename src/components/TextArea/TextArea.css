@@ -1,0 +1,16 @@
+.textarea {
+  padding: 10px 12px;
+  @supports (scrollbar-gutter: stable) {
+    padding-right: 0px;
+  }
+}
+.textarea textarea {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+.textarea:focus-within {
+  box-shadow: 0 0 0 4px rgba(68, 76, 231, 0.12), 0 0 0 1px #444ce7;
+}
+.textarea.error:focus-within {
+  box-shadow: 0 0 0 4px rgba(217, 45, 32, 0.12), 0 0 0 1px #d92d20;
+}
